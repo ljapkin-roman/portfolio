@@ -1,0 +1,28 @@
+body {
+  font-family: 'Open Sans', serif;
+  font-size: 18px; }
+
+header {
+  display: flex;
+  font-size: 1.5em;
+  color: #513636;
+  width: 100%;
+  border: 1px solid blue;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+
+.main {
+  display: flex;
+  width: 100%; }
+
+nav {
+  display: flex;
+  width: 40%;
+  border: 1px solid red; }
+
+article {
+  display: flex;
+  width: 60%;
+  border: 1px solid black; }
+
+/*# sourceMappingURL=main-portfolio.css.map */
