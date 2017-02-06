@@ -10,17 +10,31 @@ header {
 	border: 1px solid blue;
 	padding-top:50px;
 	padding-bottom:50px;
-
+    font-weight: bold;
 }
 .main {
 	display: flex;
 	width: 100%;
 }
+/******* navigation- here aside of the page****/
 nav {
 	display: flex;
+    flex-direction:column;
 	width: 40%;
 	border: 1px solid red;
 }
+.item-nav {
+    width: 100%;
+    display: flex;
+    border: 1px solid blue;
+}
+.cell-for-img {
+    width: 20%;
+}
+.name-item-img {
+    width: 79%;
+}
+/*******END  navigation****/
 article {
 	display: flex;
 	width: 60%;
