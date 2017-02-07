@@ -34,6 +34,9 @@ nav {
 .name-item-img {
   width: 79%; }
 
+.name-item-nav {
+  width: 79%; }
+
 /*******END  navigation****/
 article {
   display: flex;
