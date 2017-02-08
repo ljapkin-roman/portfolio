@@ -5,6 +5,7 @@
 	<title></title>
 	<link rel="stylesheet" href="main-portfolio.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Sansita" rel="stylesheet"> 
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 </head>
 <body>
     <header> Header </header>
@@ -14,7 +15,7 @@
             </div>
             <div class="item-nav">
                 <div class="cell-for-img">
-			<img src="img/mail.svg" alt="" width="20px" height="20px">
+                <i class="fa fa-user-o" aria-hidden="true"></i>
                 </div>
                 <div class="name-item-nav" data-link="aboutMe">
                     About Me
@@ -22,6 +23,7 @@
             </div>
             <div class="item-nav">
                 <div class="cell-for-img">
+                <i class="fa fa-suitcase" aria-hidden="true"></i>
                 </div>
                 <div class="name-item-nav" data-link="portfolio">
                     Portfolio
@@ -29,6 +31,7 @@
             </div>
             <div class="item-nav">
                 <div class="cell-for-img">
+                <i class="fa fa-map-signs" aria-hidden="true"></i>
                 </div>
                 <div class="name-item-nav" data-link="followMe">
                     Follow Me
@@ -36,6 +39,7 @@
             </div>
             <div class="item-nav">
                 <div class="cell-for-img">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
                 </div>
                 <div class="name-item-nav" data-link="contact">
                     Contact
@@ -44,7 +48,8 @@
         </nav>
 	<article>  
 		<div class="content-page" data-link="aboutMe">
-			<b> About Me </b>
+            <h3> Ляпкин Рома </h3>
+            <p>Верстальщик, фронтовик, бекендщик и просто филантроп
 		</div>
 		<div class="content-page" data-link="portfolio">
 			<b> Portfolio</b>
@@ -62,9 +67,10 @@
     <script type="text/javascript">
 	    console.log("koko");
 	    $('.content-page').hide();
+        $('.content-page:nth-child(1)').fadeIn({},100);
 	    $('.name-item-nav').click(function() {
 		$('.content-page').hide();
-		$('.content-page[data-link=' + $(this).data('link') + ']').fadeIn({}, 300);
+		$('.content-page[data-link=' + $(this).data('link') + ']').fadeIn({}, 100);
 	    })
 
     </script>
